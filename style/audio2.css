@@ -1,0 +1,46 @@
+
+.audio-player {
+        display: flex;
+        justify-content: center;
+    }
+
+    .audio-player audio {
+background-color: #903939; /* Background of the audio player */
+border-radius: 5px; /* Rounded corners */
+padding: 5px; /* Optional padding */
+}
+
+/* Style the control buttons (play, pause, etc.) */
+.audio-player audio::-webkit-media-controls-panel {
+background-color: #f0f0f0; /* Background of the control panel */
+color: #333; /* Text/icon color */
+border-radius: 5px;
+}
+
+/* Style the time and duration text */
+.audio-player audio::-webkit-media-controls-current-time-display,
+.audio-player audio::-webkit-media-controls-time-remaining-display {
+color: #333; /* Text color for time */
+}
+
+/* Style the play button */
+.audio-player audio::-webkit-media-controls-play-button {
+background-color: #6984a1; /* Blue background for play button */
+border-radius: 50%; /* Circular button */
+}
+
+/* Style the volume slider */
+.audio-player audio::-webkit-media-controls-volume-slider {
+background-color: #485e77; /* Blue volume slider */
+}
+
+/* Style the progress bar */
+.audio-player audio::-webkit-media-controls-timeline {
+background-color: #ccc; /* Gray background for timeline */
+border-radius: 5px;
+}
+
+/* Style the progress bar's filled portion */
+.audio-player audio::-webkit-media-controls-timeline::-webkit-slider-thumb {
+background-color: #007bff; /* Blue thumb for progress */
+}
