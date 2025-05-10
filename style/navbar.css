@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.custom-navbar {
+    background: linear-gradient(90deg, #F9FAFB, #E5E7EB);
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 0.5rem 0;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    color: #03653F;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    line-height: 1.0;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-acronym {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+}
+
+.logo-fullname {
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-family: 'Nunito', sans-serif;
+    display: block;
+}
+
+.custom-nav-link {
+    color: #03653F;
+    font-weight: 600;
+    font-size: 0.9rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.custom-nav-link:hover {
+    color: #2E8B57;
+}
+
+.custom-nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #2E8B57;
+    transition: width 0.3s ease;
+}
+
+.custom-nav-link:hover::after {
+    width: 100%;
+}
