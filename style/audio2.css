@@ -5,7 +5,7 @@
     }
 
     .audio-player audio {
-background-color: #903939; /* Background of the audio player */
+background-color: #c1a1a1; /* Background of the audio player */
 border-radius: 5px; /* Rounded corners */
 padding: 5px; /* Optional padding */
 }
