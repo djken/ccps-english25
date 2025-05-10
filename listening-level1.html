@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CCPS Learning Hub - Level 1</title>
+
+    <!-- Icon Logo -->
+    <link rel="shortcut icon" href="/images-icons/TBF-logo.png" type="image/x-icon">
+    <link rel="icon" href="/images-icons/TBF-logo.png" type="image/x-icon">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./images-icons/TBF-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images-icons/TBF-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images-icons/TBF-logo.png">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/audio1.css">
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style/level1.css">
     <link rel="stylesheet" href="style/navbar.css">
@@ -13,8 +25,8 @@
     <!-- <link rel="stylesheet" href="style/main.css"> -->
 </head>
 <body class="level1">
-   <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg custom-navbar"> <!--navbar-light -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container">
             <a class="navbar-brand logo" href="index.html">
                 <span class="logo-acronym">CCPS</span><br>
@@ -26,7 +38,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link custom-nav-link" href="listening-level1.html">Level 1</a>
+                        <a class="nav-link custom-nav-link active" href="listening-level1.html">Level 1</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link custom-nav-link" href="listening-level2.html">Level 2</a>
@@ -42,15 +54,16 @@
         </div>
     </nav>
 
-    
     <!-- Main Content -->
     <div class="container container01 my-5">
         <h1 class="text-center mb-4 level-title-main">CCPS Learning Hub</h1>
         <h2 class="text-center mb-5 subtitle">Listening and Reading - Level 1</h2>
         <div class="row level-content">
+            <!-- Part One -->
             <div class="col-12 col-md-4">
                 <div class="level-section">
                     <h3 class="section-title">Part One</h3>
+                    <!-- Item 1 -->
                     <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalOneL1">
                         1 - About Me ▶
                     </button>
@@ -62,13 +75,14 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>I am Mina. I am a student. I am from South Korea. I am twenty years old. I study English. I live in an apartment. I live in the city. I take the bus to school.</p>
                                     <div class="audio-player">
                                         <audio controls>
-                                            <source src="audio/about-me.mp3" type="audio/mpeg">
+                                            <source src="https://github.com/djken/audio-new/raw/refs/heads/main/Unit_1_Travel_and_Tourism.mp3" type="audio/mpeg">
                                             Your browser does not support the audio element.
                                         </audio>
                                     </div>
+                                    <p>I am Mina. I am a student. I am from South Korea. I am twenty years old.</p>
+                                    <p>I study English. I live in an apartment. I live in the city. I take the bus to school.</p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -76,7 +90,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- Item 2 -->
                     <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalTwoL1">
                         2 - My Friend ▶
                     </button>
@@ -88,13 +102,13 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>This is my friend, John. He likes to play soccer. We go to school together.</p>
                                     <div class="audio-player">
                                         <audio controls>
-                                            <source src="audio/my-friend.mp3" type="audio/mpeg">
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/2%20My%20Friend.mp3" type="audio/mpeg">
                                             Your browser does not support the audio element.
                                         </audio>
                                     </div>
+                                    <p>This is my friend Juan. He is from Mexico. He is also a student. We are in the same English class. Juan drives a car to school. He lives in a house. He lives with his wife. Her name is Maria. She is a nurse.</p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -102,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- Item 3 -->
                     <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalThreeL1">
                         3 - My Pets ▶
                     </button>
@@ -114,13 +128,203 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>I have two pets: a dog and a cat. My dog is very playful.</p>
                                     <div class="audio-player">
                                         <audio controls>
-                                            <source src="audio/my-pets.mp3" type="audio/mpeg">
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/3%20My%20Pets.mp3" type="audio/mpeg">
                                             Your browser does not support the audio element.
                                         </audio>
                                     </div>
+                                    <p>These are my pets. Rex is a dog and Lucy is a cat. Rex is big. He is white with brown spots. Lucy is small. She is orange with stripes.</p>
+                                    <p>I give them food. I play with them. They are fun to play with. They sleep in my room. My pets are my best friends.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalFourL1">
+                        4 - A Rainy Day ▶
+                    </button>
+                    <div class="modal fade" id="modalFourL1" tabindex="-1" aria-labelledby="modalFourL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalFourL1Label">4 - A Rainy Day</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/4%20A%20Rainy%20Day.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>It isn't a nice day. It is rainy and windy. I stay in the house. I watch TV. I play on the computer.</p>
+                                    <p>I eat candy. It is a fun day. It is time to eat dinner. I am not hungry. My mom isn't happy. She is angry. Maybe rainy days aren't fun.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalFiveL1">
+                        5 - On the Farm ▶
+                    </button>
+                    <div class="modal fade" id="modalFiveL1" tabindex="-1" aria-labelledby="modalFiveL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalFiveL1Label">5 - On the Farm</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/5%20On%20the%20Farm.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>Every summer, I visit my grandfather. He's ninety years old. He lives in the country. He's a farmer. I help him on the farm.</p>
+                                    <p>We wake up early in the morning. We look at the animals. We give them food. Many animals live on the farm. The ducks are my favorite. They're funny. I'm happy on the farm.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 6 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalSixL1">
+                        6 - At the Park ▶
+                    </button>
+                    <div class="modal fade" id="modalSixL1" tabindex="-1" aria-labelledby="modalSixL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalSixL1Label">6 - At the Park</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/6%20At%20the%20Park.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>It's a sunny day. Joe walks to the park. He buys popcorn. Joe walks around the lake. He eats popcorn.</p>
+                                    <p>He sees ducks in the lake. He gives popcorn to the ducks. Joe sits under a tree. He is tired. He reads a book. It's time for dinner. Joe walks home.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 7 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalSevenL1">
+                        7 - Mary's Day ▶
+                    </button>
+                    <div class="modal fade" id="modalSevenL1" tabindex="-1" aria-labelledby="modalSevenL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalSevenL1Label">7 - Mary's Day</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/7%20Mary's%20Day.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>Mary wakes up at seven o'clock. She washes her face and brushes her teeth. She eats breakfast. At eight o'clock, she goes to school. She rides a bicycle.</p>
+                                    <p>After school, she goes to the library. She does homework. At five o'clock, Mary goes home. She eats dinner. After dinner, she watches TV. She goes to sleep at ten o'clock.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 8 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalEightL1">
+                        8 - A Busy Saturday ▶
+                    </button>
+                    <div class="modal fade" id="modalEightL1" tabindex="-1" aria-labelledby="modalEightL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalEightL1Label">8 - A Busy Saturday</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/8%20A%20Busy%20Saturday.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>Today is Saturday. But it's a busy day for Max. In the morning, he studies English. He eats pizza for lunch. After lunch, Max plays soccer. Then, he goes to the supermarket.</p>
+                                    <p>He buys groceries. He carries the groceries home. Max cooks dinner. After dinner, he washes and dries the dishes. Then, he tries to study math. But he is too tired.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 9 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalNineL1">
+                        9 - My Siblings ▶
+                    </button>
+                    <div class="modal fade" id="modalNineL1" tabindex="-1" aria-labelledby="modalNineL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalNineL1Label">9 - My Siblings</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/9%20My%20Siblings.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>I have two siblings. Joe is my younger brother. He's tall and thin. He has brown hair and blue eyes. My older sister is Molly. She's short.</p>
+                                    <p>She has black hair and brown eyes. I'm in the middle. I have brown hair and brown eyes. I look like both of them.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 10 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalTenL1">
+                        10 - A Present for Mom ▶
+                    </button>
+                    <div class="modal fade" id="modalTenL1" tabindex="-1" aria-labelledby="modalTenL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTenL1Label">10 - A Present for Mom</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/10%20A%20Present%20for%20Mom.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>Today is my mom's birthday. I don't have a present for her. I want to buy a present. But I don't have any money.</p>
+                                    <p>Maybe I can make a present. But I don't know what to make. My mom likes flowers. I'm a good artist. So I paint a picture of flowers. I give the picture to my mom. She is happy.</p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -130,9 +334,11 @@
                     </div>
                 </div>
             </div>
+            <!-- Part Two -->
             <div class="col-12 col-md-4">
                 <div class="level-section">
                     <h3 class="section-title">Part Two</h3>
+                    <!-- Item 11 -->
                     <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalElevenL1">
                         11 - Peter is Sick ▶
                     </button>
@@ -144,13 +350,255 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Peter is sick today. He stays home from school.</p>
                                     <div class="audio-player">
                                         <audio controls>
-                                            <source src="audio/peter-is-sick.mp3" type="audio/mpeg">
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/11%20Peter%20is%20Sick.mp3" type="audio/mpeg">
                                             Your browser does not support the audio element.
                                         </audio>
                                     </div>
+                                    <p>Peter doesn't feel well. He has a headache and a sore throat. But he doesn't have a cough. He doesn't have a runny nose either. He is very tired. He has a fever. Peter is sick. He goes to the doctor. The doctor gives him medicine. Peter needs to rest. So he doesn't go to school.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 12 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalTwelveL1">
+                        12 - My Hobbies ▶
+                    </button>
+                    <div class="modal fade" id="modalTwelveL1" tabindex="-1" aria-labelledby="modalTwelveL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTwelveL1Label">12 - My Hobbies</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/12%20My%20Hobbies.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>I don't have much free time. I have many hobbies. I like to play computer games. I also like to read. My sister likes to watch TV. But she also likes to read. I hang out with my friends on the weekend.</p>
+                                    <p>We like to listen to music. We also like to go shopping. In the winter, I like to ski. In the summer, I like to go to the beach. I like to swim and play volleyball. I'm always busy.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 13 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalThirteenL1">
+                        13 - With My Friends ▶
+                    </button>
+                    <div class="modal fade" id="modalThirteenL1" tabindex="-1" aria-labelledby="modalThirteenL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalThirteenL1Label">13 - With My Friends</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/13%20With%20My%20Friends.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>I want to do something with my friends. But we don't know what to do. Paul wants to see a movie. But Jon and I don't want to stay inside. Jon wants to play basketball.</p>
+                                    <p>But Paul doesn't like to play basketball. We decide to go to the park. We play catch with a football. And we skate on the path around the park. We buy hot dogs, soda, and ice cream. Then, we relax in the sun.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 14 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalFourteenL1">
+                        14 - What I Want To Be ▶
+                    </button>
+                    <div class="modal fade" id="modalFourteenL1" tabindex="-1" aria-labelledby="modalFourteenL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalFourteenL1Label">14 - What I Want To Be</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/14%20What%20I%20Want%20To%20Be.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>I want to be a pilot. I want to fly airplanes. I want to travel around the world. My parents want me to be an engineer. But I don't like to study math and science. My sister wants to be a veterinarian. My brother wants to be a baseball player. He wants to be rich and famous. I hope we can be successful. I want my parents to be proud.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 15 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalFifteenL1">
+                        15 - A Birthday Party ▶
+                    </button>
+                    <div class="modal fade" id="modalFifteenL1" tabindex="-1" aria-labelledby="modalFifteenL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalFifteenL1Label">15 - A Birthday Party</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/15%20A%20Birthday%20Party.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>Today is my roommate's birthday. We have many things to do before the party. We have to clean the living room and kitchen. Then we have to go shopping. I also have to wrap his present.</p>
+                                    <p>It's a new baseball glove. He likes to play baseball. Our friends arrive at 7 o'clock. We eat cake and drink soda. We listen to music and dance. It is a fun party.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 16 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalSixteenL1">
+                        16 - I can't Find Rusty ▶
+                    </button>
+                    <div class="modal fade" id="modalSixteenL1" tabindex="-1" aria-labelledby="modalSixteenL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalSixteenL1Label">16 - I can't Find Rusty</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/16%20I%20can't%20Find%20Rusty.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>I have to walk my dog, Rusty, after school. We walk to the park. Rusty sees a squirrel. He runs and I can't hold his leash. Rusty chases the squirrel.</p>
+                                    <p>I can't catch him. Now I have to find Rusty. I climb a tree so I can see. I look for Rusty. He is near the playground. I run across the field and get him. Now we can go home.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 17 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalSeventeenL1">
+                        17 - A Messy Room ▶
+                    </button>
+                    <div class="modal fade" id="modalSeventeenL1" tabindex="-1" aria-labelledby="modalSeventeenL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalSeventeenL1Label">17 - A Messy Room</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/17%20A%20Messy%20Room.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>I have to clean my room. There are dirty clothes on the floor. There are clean clothes on my bed. There are books and trash everywhere. I put the dirty clothes in the laundry basket.</p>
+                                    <p>I fold the clean clothes. I put them in the dresser. I put the books on my desk. I put the trash in the trash can. I sweep the floor. Now my room is not messy.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 18 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalEighteenL1">
+                        18 - At the Lake ▶
+                    </button>
+                    <div class="modal fade" id="modalEighteenL1" tabindex="-1" aria-labelledby="modalEighteenL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalEighteenL1Label">18 - At the Lake</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/18%20At%20the%20Lake.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>In the summer, my family goes to the lake. There are many cabins at the lake. We rent a small cabin on the shore. I spend a lot of time with my sisters. We are always near the water. There is a dock behind the cabin. We can jump off the dock into the lake. Or we can fish from the dock. There is a small boat we can use. We row out to the island. I like to visit the lake.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 19 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalNineteenL1">
+                        19 - A Test Tomorrow ▶
+                    </button>
+                    <div class="modal fade" id="modalNineteenL1" tabindex="-1" aria-labelledby="modalNineteenL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalNineteenL1Label">19 - A Test Tomorrow</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/19%20A%20Test%20Tomorrow.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>I have a test tomorrow. I like to study with my friend Sarah. She is very smart. We meet at the library. But it is too crowded. There aren't any empty tables. We go to Sarah's house.</p>
+                                    <hr>
+                                    <p>But it's too noisy. Her brother is having a piano lesson. Finally, we go to my house. There aren't any people at my house. It is quiet and we can study. I want to get a good grade on the test.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 20 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalTwentyL1">
+                        20 - A Snow Day ▶
+                    </button>
+                    <div class="modal fade" id="modalTwentyL1" tabindex="-1" aria-labelledby="modalTwentyL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTwentyL1Label">20 - A Snow Day</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/20%20A%20Snow%20Day.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>There is no school today. It is snowing too much. I want to go outside to play. I have to put on a warm hat, a coat, and gloves. My neighbors are playing in the snow. They are building a snowman.</p>
+                                    <p>I help finish the snowman. Then we have a snowball fight. Now we are cold so we go inside. We sit by the fireplace and drink hot chocolate. It is still snowing outside.</p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -160,9 +608,11 @@
                     </div>
                 </div>
             </div>
+            <!-- Part Three -->
             <div class="col-12 col-md-4">
                 <div class="level-section">
                     <h3 class="section-title">Part Three</h3>
+                    <!-- Item 21 -->
                     <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalTwentyOneL1">
                         21 - My Busy Day ▶
                     </button>
@@ -174,13 +624,257 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>I have a busy day with school and homework.</p>
                                     <div class="audio-player">
                                         <audio controls>
-                                            <source src="audio/my-busy-day.mp3" type="audio/mpeg">
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/21%20My%20Busy%20Day.mp3" type="audio/mpeg">
                                             Your browser does not support the audio element.
                                         </audio>
                                     </div>
+                                    <p>I am so busy today. I have a lot of homework. I am writing an essay for my English class. And I am studying for my math test. Then, I have to prepare for an event.</p>
+                                    <p>We are having a bake sale at school. We need money for a field trip. I am making signs to post at school. And I am baking cookies to sell. Tonight, I am going to my grandfather's birthday party. So I have to finish everything first. It is rather stressful.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 22 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalTwentyTwoL1">
+                        22 - A Science Project ▶
+                    </button>
+                    <div class="modal fade" id="modalTwentyTwoL1" tabindex="-1" aria-labelledby="modalTwentyTwoL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTwentyTwoL1Label">22 - A Science Project</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/22%20A%20Science%20Project.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>Today is an important day. I am doing a science experiment in class. I need to listen to the directions. So I do not make a mistake.</p>
+                                    <p>I am working with a partner. We begin the experiment. We are mixing chemicals together. Then we look at them with a microscope. The chemicals are turning green. We write our results in our notebooks. It is very exciting. Something fun is always happening in my science class. I am not going to be bored here.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 23 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalTwentyThreeL1">
+                        23 - The Baseball Game ▶
+                    </button>
+                    <div class="modal fade" id="modalTwentyThreeL1" tabindex="-1" aria-labelledby="modalTwentyThreeL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTwentyThreeL1Label">23 - The Baseball Game</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/23%20The%20Baseball%20Game.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>Mark has tickets to a baseball game. He is going with his friend Paul. Paul's dad is driving them to the stadium. But his dad is really late.</p>
+                                    <p>Mark calls Paul's home. Paul has bad news. He isn't coming to pick Mark up. His dad isn't feeling well. Paul's dad has an idea. He gives his ticket to Mark's dad. Mark's dad drives them to the baseball game. They arrive at the stadium on time. They aren't going to miss the start of the game. Paul buys his dad a souvenir.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 24 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalTwentyFourL1">
+                        24 - A Long Weekend ▶
+                    </button>
+                    <div class="modal fade" id="modalTwentyFourL1" tabindex="-1" aria-labelledby="modalTwentyFourL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTwentyFourL1Label">24 - A Long Weekend</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/24%20A%20Long%20Weekend.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>I have an extra day off from school this weekend. My family and I are going to take a train to the city. We have tickets to see a play on Friday.</p>
+                                    <p>On Saturday, we are going to spend the day downtown. We are going to visit the museum and go shopping. Then, we are going to go to a nice restaurant Saturday night. On Sunday morning, we are going to walk through the city garden. My mom likes to take pictures of the flowers there. They are very colorful. We will take the train home after brunch. It is going to be a fun weekend.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 25 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalTwentyFiveL1">
+                        25 - The Inventor ▶
+                    </button>
+                    <div class="modal fade" id="modalTwentyFiveL1" tabindex="-1" aria-labelledby="modalTwentyFiveL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTwentyFiveL1Label">25 - The Inventor</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/25%20The%20Inventor.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>My friend, Mike, has a lot of crazy ideas. He builds many interesting machines. He likes to do science experiments. He is always thinking of new inventions.</p>
+                                    <p>Right now, he is designing a robot. The robot can move up the stairs. It can also carry things. Mike is going to be an inventor. Or maybe he can be a scientist. He wants to create new things. He is going to be famous.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 26 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalTwentySixL1">
+                        26 - My Favorite Season ▶
+                    </button>
+                    <div class="modal fade" id="modalTwentySixL1" tabindex="-1" aria-labelledby="modalTwentySixL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTwentySixL1Label">26 - My Favorite Season</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/26%20My%20Favorite%20Season.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>Spring is my favorite season. The weather is warm but not too hot. I like spending time outdoors. I go to the park a lot.</p>
+                                    <p>Or I hike in the forest. I smell the fresh air. The trees are growing new leaves. Many flowers are blooming. I like photographing the flowers. I also like working in the yard. I plant a vegetable garden and keep the yard nice. Spring is busy but it is also a lot of fun.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 27 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalTwentySevenL1">
+                        27 - A Vacation ▶
+                    </button>
+                    <div class="modal fade" id="modalTwentySevenL1" tabindex="-1" aria-labelledby="modalTwentySevenL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTwentySevenL1Label">27 - A Vacation</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/27%20A%20Vacation.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>My family and I are planning a vacation. We are going to Hawaii for a week. I am very excited for our trip. We are staying next to the beach.</p>
+                                    <p>I am going to swim all day. I want to play in the sand and build sand castles. There are other activities to do, too. We can go hiking and see a waterfall. I want to go to a luau. We can eat local food and see hula dancing. It is going to be a great vacation.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 28 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalTwentyEightL1">
+                        28 - At the Beach ▶
+                    </button>
+                    <div class="modal fade" id="modalTwentyEightL1" tabindex="-1" aria-labelledby="modalTwentyEightL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTwentyEightL1Label">28 - At the Beach</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/28%20At%20the%20Beach.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>I am going to the beach with my older sister. We are leaving at noon. We are taking the bus. We wait at the bus stop at the end of the street.</p>
+                                    <p>We finally arrive at the beach. We change into our swimsuits and go swimming. Later, we walk to the lighthouse. There is one at this beach. We climb to the top and see the view. We can see whales in the ocean. Then, we walk back to the beach. My sister spends a lot of time here. She is a lifeguard.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 29 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalTwentyNineL1">
+                        29 - A Winter Trip ▶
+                    </button>
+                    <div class="modal fade" id="modalTwentyNineL1" tabindex="-1" aria-labelledby="modalTwentyNineL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTwentyNineL1Label">29 - A Winter Trip</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/29%20A%20Winter%20Trip.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>My family and I are taking a winter trip. We are going to the mountains for four days. My aunt and uncle are also coming with us. We are staying at a ski resort. We are going skiing and snowboarding. I have some questions before we leave. Are we taking our dog? Is my cousin coming?</p>
+                                    <p>I ask my mom for details. She answers my questions. We are not taking our dog because pets are not allowed. My grandfather is going to take care of our dog. My cousin is coming but she can't ski. She has a broken leg. She wants to relax by the fire in the cabin.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 30 -->
+                    <button type="button" class="level-item btn w-100 text-start mb-2" data-bs-toggle="modal" data-bs-target="#modalThirtyL1">
+                        30 - A Beautiful Day ▶
+                    </button>
+                    <div class="modal fade" id="modalThirtyL1" tabindex="-1" aria-labelledby="modalThirtyL1Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalThirtyL1Label">30 - A Beautiful Day</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="audio-player">
+                                        <audio controls>
+                                            <source src="https://gitlab.com/isteah.jdessources/audio-1/-/raw/master/30%20A%20Beautiful%20Day.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    </div>
+                                    <p>It is a beautiful day so I want to be outside. I call my friend Alice. Do you want to play tennis? But she has to look after her baby sister.</p>
+                                    <p>I send a message to my friend Jenny. Do you have any free time today? She responds immediately. Do you want to go to the zoo? We meet at the gate at one o'clock. We see tigers, elephants, and monkeys. The penguins are my favorite. I like going to the zoo.</p>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -193,6 +887,7 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="footer custom-footer text-center">
         <div class="text-light">
             <p>© 2020 Copyright, Kendy, Samy & Jim</p>
@@ -204,7 +899,6 @@
             </div>
         </div>
     </footer>
-  
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -231,6 +925,28 @@
                 });
                 item.addEventListener('mouseout', () => {
                     item.style.transform = 'scale(1)';
+                });
+            });
+
+            // Ensure only one audio plays at a time
+            document.addEventListener('play', function(e) {
+                const audios = document.getElementsByTagName('audio');
+                for (let i = 0; i < audios.length; i++) {
+                    if (audios[i] !== e.target) {
+                        audios[i].pause();
+                    }
+                }
+            }, true);
+
+            // Pause audio when modal is closed
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                modal.addEventListener('hidden.bs.modal', () => {
+                    const audio = modal.querySelector('audio');
+                    if (audio) {
+                        audio.pause();
+                        audio.currentTime = 0; // Reset to start
+                    }
                 });
             });
         });

@@ -1,0 +1,33 @@
+.audio-player {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem; /* Added spacing between audio and text */
+}
+.audio-player audio {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 5px;
+}
+.audio-player audio::-webkit-media-controls-panel {
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 5px;
+}
+.audio-player audio::-webkit-media-controls-current-time-display,
+.audio-player audio::-webkit-media-controls-time-remaining-display {
+    color: #333;
+}
+.audio-player audio::-webkit-media-controls-play-button {
+    background-color: #b7c6d6;
+    border-radius: 50%;
+}
+.audio-player audio::-webkit-media-controls-volume-slider {
+    background-color: #a8bdd3;
+}
+.audio-player audio::-webkit-media-controls-timeline {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+.audio-player audio::-webkit-media-controls-timeline::-webkit-slider-thumb {
+    background-color: #007bff;
+}
