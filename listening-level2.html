@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CCPS Learning Hub - Level 2</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="style/main.css"> -->
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/footer.css">
@@ -464,13 +464,20 @@
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- Font Awesome (deferred to avoid blocking) -->
     <script defer src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- Custom JS -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             console.log('DOM fully loaded and parsed');
+
+            // Check if Bootstrap is loaded
+            if (typeof bootstrap === 'undefined') {
+                console.error('Bootstrap JavaScript is not loaded. Please check the Bootstrap CDN link.');
+            } else {
+                console.log('Bootstrap JavaScript is loaded successfully.');
+            }
 
             // Fade-in animation for page load
             document.body.style.opacity = 0;
@@ -489,6 +496,22 @@
                 item.addEventListener('mouseout', () => {
                     item.style.transform = 'scale(1)';
                 });
+            });
+
+            // Stop audio when modal is closed
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                try {
+                    modal.addEventListener('hidden.bs.modal', () => {
+                        const audio = modal.querySelector('audio');
+                        if (audio) {
+                            audio.pause();
+                            audio.currentTime = 0; // Optional: Reset audio to start
+                        }
+                    });
+                } catch (error) {
+                    console.error('Error attaching modal event listener:', error);
+                }
             });
         });
     </script>
