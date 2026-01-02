@@ -3,141 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Classes</title>
+    <title>English Classes - CCPS</title>
     
     <!-- Icon Logo -->
     <link rel="shortcut icon" href="/images-icons/TBF-logo.png" type="image/x-icon">
-    <link rel="icon" href="/images-icons/TBF-logo.png" type="image/x-icon">
     
-    <link rel="apple-touch-icon" sizes="180x180" href="./images-icons/TBF-logo.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images-icons/TBF-logo.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images-icons/TBF-logo.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Custom CSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2c3e50',
+                        secondary: '#3498db',
+                        accent: '#e74c3c',
+                    }
+                }
+            }
+        }
+    </script>
+    
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/navbar.css">
-     <link rel="stylesheet" href="style/footer.css">
 </head>
-<body>
+<body class="bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700 min-h-screen">
     <!-- Navbar -->
-   <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-    <div class="container">
-        <a class="navbar-brand logo" href="index.html">
-            <span class="logo-acronym">CCPS</span><br>
-            <span class="logo-fullname">Calvary Christian Professional School</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link custom-nav-link" href="listening-level1.html">Level 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link custom-nav-link" href="listening-level2.html">Level 2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link custom-nav-link" href="listening-level3.html">Level 3</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link custom-nav-link" href="more.html">More Resources</a>
-                </li>
-            </ul>
+    <nav class="glass-effect shadow-2xl sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex flex-col">
+                    <span class="text-3xl font-bold text-secondary tracking-wider">CCPS</span>
+                    <span class="text-xs text-primary tracking-wide">Calvary Christian Professional School</span>
+                </a>
+                
+                <!-- Mobile menu button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-primary focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                
+                <!-- Desktop menu -->
+                <ul class="hidden lg:flex space-x-2">
+                    <li><a href="listening-level1.html" class="px-4 py-2 rounded-lg text-primary font-medium hover:bg-secondary hover:text-white transition-all duration-300 hover:-translate-y-1">Level 1</a></li>
+                    <li><a href="listening-level2.html" class="px-4 py-2 rounded-lg text-primary font-medium hover:bg-secondary hover:text-white transition-all duration-300 hover:-translate-y-1">Level 2</a></li>
+                    <li><a href="listening-level3.html" class="px-4 py-2 rounded-lg text-primary font-medium hover:bg-secondary hover:text-white transition-all duration-300 hover:-translate-y-1">Level 3</a></li>
+                    <li><a href="more.html" class="px-4 py-2 rounded-lg text-primary font-medium hover:bg-secondary hover:text-white transition-all duration-300 hover:-translate-y-1">More Resources</a></li>
+                </ul>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobileMenu" class="hidden lg:hidden mt-4 space-y-2">
+                <a href="listening-level1.html" class="block px-4 py-2 rounded-lg text-primary font-medium hover:bg-secondary hover:text-white transition-all duration-300">Level 1</a>
+                <a href="listening-level2.html" class="block px-4 py-2 rounded-lg text-primary font-medium hover:bg-secondary hover:text-white transition-all duration-300">Level 2</a>
+                <a href="listening-level3.html" class="block px-4 py-2 rounded-lg text-primary font-medium hover:bg-secondary hover:text-white transition-all duration-300">Level 3</a>
+                <a href="more.html" class="block px-4 py-2 rounded-lg text-primary font-medium hover:bg-secondary hover:text-white transition-all duration-300">More Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div class="container mx-auto px-4 mt-8">
+        <div id="heroCarousel" class="relative rounded-3xl overflow-hidden shadow-2xl h-96 lg:h-[500px]">
+            <!-- Slide 1 -->
+            <div class="carousel-item active absolute inset-0">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1200')"></div>
+                <div class="absolute inset-0 gradient-overlay"></div>
+                <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+                    <h2 class="text-4xl lg:text-6xl font-bold mb-4 animate-fadeInUp drop-shadow-2xl">
+                        <i class="fas fa-book-reader mr-3"></i>Welcome to CCPS
+                    </h2>
+                    <p class="text-xl lg:text-2xl animate-fadeInUp drop-shadow-lg">Master English through listening, reading, and comprehension</p>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="carousel-item absolute inset-0">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200')"></div>
+                <div class="absolute inset-0 gradient-overlay"></div>
+                <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+                    <h2 class="text-4xl lg:text-6xl font-bold mb-4 animate-fadeInUp drop-shadow-2xl">
+                        <i class="fas fa-graduation-cap mr-3"></i>Learn at Your Pace
+                    </h2>
+                    <p class="text-xl lg:text-2xl animate-fadeInUp drop-shadow-lg">Choose from 3 progressive levels designed for your success</p>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="carousel-item absolute inset-0">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1200')"></div>
+                <div class="absolute inset-0 gradient-overlay"></div>
+                <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+                    <h2 class="text-4xl lg:text-6xl font-bold mb-4 animate-fadeInUp drop-shadow-2xl">
+                        <i class="fas fa-headphones mr-3"></i>Interactive Learning
+                    </h2>
+                    <p class="text-xl lg:text-2xl animate-fadeInUp drop-shadow-lg">Audio exercises with WH-Questions to enhance your skills</p>
+                </div>
+            </div>
+            
+            <!-- Carousel Controls -->
+            <button id="prevBtn" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white p-3 rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-110 z-20">
+                <i class="fas fa-chevron-left text-xl"></i>
+            </button>
+            <button id="nextBtn" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white p-3 rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-110 z-20">
+                <i class="fas fa-chevron-right text-xl"></i>
+            </button>
+            
+            <!-- Carousel Indicators -->
+            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
+                <button class="carousel-indicator w-3 h-3 rounded-full bg-white/70 hover:bg-white transition-all duration-300 active-indicator"></button>
+                <button class="carousel-indicator w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all duration-300"></button>
+                <button class="carousel-indicator w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all duration-300"></button>
+            </div>
         </div>
     </div>
-</nav>
 
     <!-- Main Content -->
-    <div class="container my-5">
-        <h1 class="text-center mb-5 main-title">English Classes</h1>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <!-- Level 1 -->
-            <div class="col">
-                <a href="listening-level1.html" class="card-link">
-                    <div class="card custom-card">
-                        <div class="card-image c1"></div> <!-- Remplacement de <img> par <div> pour fonds CSS -->
-                        <div class="card-img-overlay">
-                            <h5 class="level-title">Level 1</h5>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Text and Audio</h5>
-                            <p class="card-text">* Listen, Read and Ask Questions Using WH-Questions</p>
-                            <span class="badge custom-badge">30</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!-- Level 2 -->
-            <div class="col">
-                <a href="listening-level2.html" class="card-link">
-                    <div class="card custom-card">
-                        <div class="card-image c2"></div>
-                        <div class="card-img-overlay">
-                            <h5 class="level-title">Level 2</h5>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Text and Audio</h5>
-                            <p class="card-text">* Listen, Read and Ask Questions Using WH-Questions</p>
-                            <span class="badge custom-badge">15</span>
+    <div class="container mx-auto px-4 py-12">
+        <h1 class="text-4xl lg:text-5xl font-bold text-white text-center mb-12 animate-fadeIn drop-shadow-2xl">
+            <i class="fas fa-language mr-3"></i>English Classes
+        </h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Level 1 Card -->
+            <a href="listening-level1.html" class="group block">
+                <div class="card-hover-effect bg-white rounded-3xl overflow-hidden shadow-2xl h-full">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=600')"></div>
+                        <div class="absolute inset-0 gradient-overlay opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <h3 class="text-5xl font-bold text-white drop-shadow-2xl transition-transform duration-300 group-hover:scale-110">
+                                <i class="fas fa-star mr-3"></i>Level 1
+                            </h3>
                         </div>
                     </div>
-                </a>
-            </div>
-            <!-- Level 3 -->
-            <div class="col">
-                <a href="listening-level3.html" class="card-link">
-                    <div class="card custom-card">
-                        <div class="card-image c3"></div>
-                        <div class="card-img-overlay">
-                            <h5 class="level-title">Level 3</h5>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Text and Audio</h5>
-                            <p class="card-text">* Listen, Read and Ask Questions Using WH-Questions</p>
-                            <span class="badge custom-badge">15</span>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold text-secondary mb-3 flex items-center">
+                            <i class="fas fa-headphones mr-3"></i>Text and Audio
+                        </h4>
+                        <p class="text-gray-700 mb-6 leading-relaxed">Listen, Read and Ask Questions Using WH-Questions. Perfect for beginners starting their English journey.</p>
+                        <span class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-secondary to-accent text-white rounded-full font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                            <i class="fas fa-file-audio mr-2"></i>30 Lessons
+                        </span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Level 2 Card -->
+            <a href="listening-level2.html" class="group block">
+                <div class="card-hover-effect bg-white rounded-3xl overflow-hidden shadow-2xl h-full">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600')"></div>
+                        <div class="absolute inset-0 gradient-overlay opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <h3 class="text-5xl font-bold text-white drop-shadow-2xl transition-transform duration-300 group-hover:scale-110">
+                                <i class="fas fa-award mr-3"></i>Level 2
+                            </h3>
                         </div>
                     </div>
-                </a>
-            </div>
-            <!-- Level 4 -->
-            <div class="col">
-                <a href="more.html" class="card-link">
-                    <div class="card custom-card">
-                        <div class="card-image c4"></div>
-                        <div class="card-img-overlay">
-                            <h5 class="level-title">More Resources</h5>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Text and Audio</h5>
-                            <p class="card-text">* Not Available Yet</p>
-                            <span class="badge custom-badge">0</span>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold text-secondary mb-3 flex items-center">
+                            <i class="fas fa-headphones mr-3"></i>Text and Audio
+                        </h4>
+                        <p class="text-gray-700 mb-6 leading-relaxed">Listen, Read and Ask Questions Using WH-Questions. Build on your foundation with intermediate content.</p>
+                        <span class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-secondary to-accent text-white rounded-full font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                            <i class="fas fa-file-audio mr-2"></i>15 Lessons
+                        </span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Level 3 Card -->
+            <a href="listening-level3.html" class="group block">
+                <div class="card-hover-effect bg-white rounded-3xl overflow-hidden shadow-2xl h-full">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600')"></div>
+                        <div class="absolute inset-0 gradient-overlay opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <h3 class="text-5xl font-bold text-white drop-shadow-2xl transition-transform duration-300 group-hover:scale-110">
+                                <i class="fas fa-trophy mr-3"></i>Level 3
+                            </h3>
                         </div>
                     </div>
-                </a>
-            </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold text-secondary mb-3 flex items-center">
+                            <i class="fas fa-headphones mr-3"></i>Text and Audio
+                        </h4>
+                        <p class="text-gray-700 mb-6 leading-relaxed">Listen, Read and Ask Questions Using WH-Questions. Advanced exercises for confident English speakers.</p>
+                        <span class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-secondary to-accent text-white rounded-full font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                            <i class="fas fa-file-audio mr-2"></i>15 Lessons
+                        </span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- More Resources Card -->
+            <a href="more.html" class="group block">
+                <div class="card-hover-effect bg-white rounded-3xl overflow-hidden shadow-2xl h-full">
+                    <div class="relative h-64 overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600')"></div>
+                        <div class="absolute inset-0 gradient-overlay opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <h3 class="text-4xl lg:text-5xl font-bold text-white drop-shadow-2xl transition-transform duration-300 group-hover:scale-110">
+                                <i class="fas fa-plus-circle mr-3"></i>More Resources
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-2xl font-bold text-secondary mb-3 flex items-center">
+                            <i class="fas fa-tools mr-3"></i>Additional Materials
+                        </h4>
+                        <p class="text-gray-700 mb-6 leading-relaxed">Exciting new content coming soon! Check back regularly for updates and supplementary materials.</p>
+                        <span class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-500 to-gray-700 text-white rounded-full font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                            <i class="fas fa-clock mr-2"></i>Coming Soon
+                        </span>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="footer custom-footer text-center">
-        <div class="container">
-            <p>© 2020 Copyright, Kendy, Samy & Jim</p>
-            <div>
-                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+    <footer class="bg-primary/95 backdrop-blur-lg text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4 text-lg">
+                <i class="far fa-copyright mr-2"></i>2020 Copyright, Kendy, Samy & Jim
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-secondary transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-secondary/50">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-secondary transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-secondary/50">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-secondary transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-secondary/50">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a href="#" class="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-secondary transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-secondary/50">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS and Font Awesome for icons -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script/min.js"></script>
 </body>
 </html>
